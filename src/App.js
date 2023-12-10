@@ -1,16 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import Dashbord from './contaner/screen/dashbord';
-import {NextUIProvider} from "@nextui-org/react";
-import {Button} from "@nextui-org/react";
+import { NextUIProvider } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
+import Screen from './contaner/screen';
 
 function App() {
   return (
     <NextUIProvider>
-      <Dashbord />
-      <Button color="primary">
-      Button
-    </Button>
+      <div className='bg-gray-100 h-screen'>
+        <Screen />
+      </div>
     </NextUIProvider>
   );
 }
